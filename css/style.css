@@ -5,14 +5,41 @@
  *
  * Made By MaterializeCSS.com
  */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+body {
+  background: #FFF3E8;
+}
+
+h3 {
+  color: black;
+  font-family: 'Syncopate', sans-serif;
+  text-align: left;
+}
+
+h4 {
+  color: black;
+}
+
+.logo {
+  fill: yellow;
+}
 
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
 
+.nav-wrapper {
+  background-color: #FFF3E8;
+}
+
 #logo-container {
   text-transform: uppercase;
+}
+
+.highlights {
+  color: #F05A4A;
 }
 
 p {
@@ -20,7 +47,7 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #334B35;
 }
 
 .parallax-container {
@@ -58,4 +85,5 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-color: #334B35;
 }
