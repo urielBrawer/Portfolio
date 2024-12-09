@@ -87,3 +87,16 @@ footer.page-footer {
   margin: 0;
   background-color: #334B35;
 }
+
+#hamburger {
+  /*background-color: #F05A4A;*/
+  position: absolute; /* Ensure positioning works within a container */
+  top: 35%; /* Center vertically if necessary */
+  transform: translateY(-50%); /* Adjust centering effect */
+  right: 0; /* Stick to the right edge */
+  padding: 10px;
+}
+
+.nav-wrapper {
+  width: 100%;
+}
