@@ -121,13 +121,15 @@ footer.page-footer {
   .green_block {
     width: 100%;
     padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #334B35;
     h3, h4 {
     color: #FFF3E8
     }
   }
 
-  
+
 
   .container {
     width: 100%;
