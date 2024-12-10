@@ -90,29 +90,54 @@ footer.page-footer {
 
 
 /*************  navigation *************/
-#hamburger {
-  /*background-color: #F05A4A;*/
-  position: absolute; /* Ensure positioning works within a container */
-  top: 35%; /* Center vertically if necessary */
-  transform: translateY(-50%); /* Adjust centering effect */
-  right: 0; /* Stick to the right edge */
-  padding: 10px;
-}
-
-.nav-wrapper {
-  width: 100%;
-}
-
-.sidenav {
-  right: 0%; /* sollte eigentlich nach rechts bewegen, aber es kommt immer der element.style, transform: transformX(0%), wieso?*/
-}
-
-@media (max-width: 768px) {
-  .welcome_screen {
-    /*to color background*/
-      background-size: 100% 100%;
-      background-position: 0px 0px,0px 0px;
-      background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%),radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, #FFF3E8 100%);
-    height: 100vh; /*vh = viewport height*/
+  #hamburger {
+    /*background-color: #F05A4A;*/
+    position: absolute; /* Ensure positioning works within a container */
+    top: 35%; /* Center vertically if necessary */
+    transform: translateY(-50%); /* Adjust centering effect */
+    right: 0; /* Stick to the right edge */
+    padding: 10px;
   }
-}
+
+  .nav-wrapper {
+    width: 100%;
+  }
+
+  .sidenav {
+    right: 0%; /* sollte eigentlich nach rechts bewegen, aber es kommt immer der element.style, transform: transformX(0%), wieso?*/
+  }
+
+/********** custom colors **************/
+  @media (max-width: 768px) {
+    .welcome_screen {
+      /*to color background*/
+        background-size: 100% 100%;
+        background-position: 0px 0px,0px 0px;
+        background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%),radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, #FFF3E8 100%);
+      height: 100vh; /*vh = viewport height*/
+    }
+  }
+
+  .green_block {
+    width: 100%;
+    padding: 0;
+    background-color: #334B35;
+    h3, h4 {
+    color: #FFF3E8
+    }
+  }
+
+  
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  } 
+
+  .section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
