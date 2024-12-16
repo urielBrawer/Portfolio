@@ -117,14 +117,50 @@ footer.page-footer {
   background-color: #334B35;
 }
 
-/*************  Buttons & links *************/
+/*************  Buttons, links & inputs *************/
+.button-container {
+  align-items: flex-end;
+}
+
 .button {
-  font-size: 1.5rem;
-  background-color: #F05A49;
-  color: #FFF3E8;
+  font-size: 1rem;
+  color: #F05A49;
+  background-color: #FFF3E8;
+  text-transform: uppercase;
+  font-weight: bolder;
   padding: 5px 15px 5px 15px;
   border-radius: 5px;
   border: none;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact-form .row {
+  flex: 1;
+}
+
+.contact-form {
+  justify-content: flex-end;
+}
+
+textarea.form-control {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+}
+
+textarea:focus {
+  border: 1px solid #F05A4A !important;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 1px solid #F05A4A !important;
+  outline: none;
 }
 
 /*************  navigation *************/
