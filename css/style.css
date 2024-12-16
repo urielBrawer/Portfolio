@@ -124,12 +124,45 @@ footer.page-footer {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #334B35;
-    h3, h4 {
-    color: #FFF3E8
+    h3{
+      color: #FFF3E8;
+      padding-left: 10px;
+      padding-right: 10px;
+      animation: slidein-right 3s;	
+      animation-iteration-count:3s infinite;
+      width: 100%;
+    }
+    h4 {
+      color: #FFF3E8;
+      padding-left: 10px;
+      padding-right: 10px;
+      animation: slidein-left 3s;	
+      animation-iteration-count:1;
+      width: 100%;
     }
   }
 
+  @keyframes slidein-left {
+	  from {
+	    margin-left: 100%;
+	    width: 300%; 
+	  }
+	  to {
+	    margin-left: 0%;
+	    width: 100%;
+	  }
+	}
 
+  @keyframes slidein-right {
+	  from {
+	    margin-left: 50%;
+	    width: 300%; 
+	  }
+	  to {
+	    margin-left: 0%;
+	    width: 100%;
+	  }
+	}
 
   .container {
     width: 100%;
