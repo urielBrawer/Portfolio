@@ -214,3 +214,21 @@ footer.page-footer {
     padding: 0;
   }
 
+
+/********** Profil **************/
+
+.profil{
+  text-align: center;
+  padding: 20px;
+}
+
+.profil img{
+  width: 250px;
+  height: 250px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.profil p {
+  text-align: left;
+}
