@@ -180,7 +180,10 @@ footer.page-footer {
     }
   }
 
-  @keyframes slidein-left {
+
+
+/********* Animations ************/
+ /* @keyframes slidein-left {
 	  from {
 	    margin-left: 100%;
 	    width: 300%; 
@@ -200,7 +203,7 @@ footer.page-footer {
 	    margin-left: 0%;
 	    width: 100%;
 	  }
-	}
+	}*/
 
   .container {
     width: 100%;
@@ -214,3 +217,4 @@ footer.page-footer {
     padding: 0;
   }
 
+/**************** head-bubbles *************/
