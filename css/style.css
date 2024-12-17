@@ -307,3 +307,30 @@ input:focus {
 .profil p {
   text-align: left;
 }
+
+.circle {
+  width: 200px; /* Set the width of the circle */
+  height: 200px; /* Set the height of the circle */
+  border-radius: 50%; /* Make it circular */
+  background-size: cover; /* Ensure the image covers the entire circle */
+  background-position: center; /* Center the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+.circle:hover {
+  transform: scale(1.3);
+}
+
+/* Style the text below the image */
+.caption {
+  position: absolute; /* Allows precise positioning */
+  bottom: 15%; /* Position the text in the bottom half of the image */
+  left: 50%; /* Center-align the text horizontally */
+  transform: translateX(-50%); /* Adjust for horizontal centering */
+  color: rgb(255, 255, 255); /* Optional: Text color */
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold; /* Optional: Bold text */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Shadow for readability */
+  pointer-events: none; /* Prevent text from interfering with the link click */
+}
