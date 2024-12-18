@@ -9,347 +9,330 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 :root {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  --mainColor: #334B35;
+  --mainColor2: #FFF3E8;
 }
 
 body {
-    background: #FFF3E8;
+  background: #FFF3E8;
 }
 
 h1 {
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 h3 {
-    color: black;
-    font-family: 'Syncopate', sans-serif;
-    text-align: left;
+  color: black;
+  font-family: 'Syncopate', sans-serif;
+  text-align: left;
 }
 
 h4 {
-    color: black;
-    font-size: 2rem;
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 50px;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50px;
 }
 
 .logo {
-    fill: yellow;
+  fill: yellow;
 }
 
 nav ul a,
 nav .brand-logo {
-    color: #444;
+  color: #444;
 }
 
 .nav-wrapper {
-    background-color: #FFF3E8;
+  background-color: #FFF3E8;
 }
 
 #logo-container {
-    text-transform: uppercase;
-    font-family: 'Syncopate', sans-serif;
-    font-weight: bolder;
-    color: black;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  text-transform: uppercase;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: bolder;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .highlights {
-    color: #F05A4A;
+  color: #F05A4A;
+}
+
+.upper-sparkle {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.lower-sparkle {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.cat-container {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-start;
 }
 
 p {
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
 .sidenav-trigger {
-    color: #334B35;
+  color: #334B35;
 }
 
 form {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 label {
-    font-size: 1rem;
-    color: #888888;
+  font-size: 1rem;
+  color: #888888;
 }
 
 .text-input {
-    border-radius: 5px;
-    margin: 10px 0 10px 0;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
 }
 
 .text-container {
-    padding: 10rem 5rem 20rem 5rem;
+  padding: 10rem 5rem 20rem 5rem;
 }
 
 .parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255, 255, 255, .9);
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
 }
-
-.parallax-container .section {
+  .parallax-container .section {
     width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-
-    #index-banner .section {
-        top: 10%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
 
 .icon-block {
-    padding: 0 15px;
+  padding: 0 15px;
 }
-
 .icon-block .material-icons {
-    font-size: inherit;
+  font-size: inherit;
 }
 
 footer.page-footer {
-    margin: 0;
-    background-color: #334B35;
+  margin: 0;
+  background-color: #334B35;
 }
 
 /*************  Buttons, links & inputs *************/
 .button-container {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .button {
-    font-size: 1rem;
-    color: #F05A49;
-    background-color: #FFF3E8;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding: 5px 15px 5px 15px;
-    border-radius: 5px;
-    border: none;
+  font-size: 1rem;
+  color: #F05A49;
+  background-color: #FFF3E8;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  border: none;
 }
 
 .label {
-    text-transform: uppercase;
-    font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .contact-form .row {
-    flex: 1;
+  flex: 1;
 }
 
 .contact-form {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 textarea.form-control {
-    margin: 10px 0;
-    width: 100%;
-    padding: 10px;
-    height: 150px;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  height: 150px;
 }
 
 textarea:focus {
-    border: 1px solid #F05A4A !important;
-    outline: none;
+  border: 1px solid #F05A4A !important;
+  outline: none;
 }
 
 input:focus {
-    border-bottom: 1px solid #F05A4A !important;
-    outline: none;
+  border-bottom: 1px solid #F05A4A !important;
+  outline: none;
 }
 
 .link {
-    font-size: 2.28rem;
-    color: #F05A4A;
-    text-decoration: underline;
+  font-size: 2.28rem;
+  color: #F05A4A;
+  text-decoration: underline;
 }
 
 /*************  navigation *************/
-#hamburger {
+  #hamburger {
     /*background-color: #F05A4A;*/
     position: absolute; /* Ensure positioning works within a container */
     top: 35%; /* Center vertically if necessary */
     transform: translateY(-50%); /* Adjust centering effect */
     right: 0; /* Stick to the right edge */
     padding: 10px;
-}
+  }
 
-.nav-wrapper {
+  .nav-wrapper {
     width: 100%;
-}
+  }
 
-.sidenav {
+  .sidenav {
     right: 0%; /* sollte eigentlich nach rechts bewegen, aber es kommt immer der element.style, transform: transformX(0%), wieso?*/
-}
+  }
 
 /********** custom colors **************/
+  @media (max-width: 768px) {
+    .welcome-screen {
+      /*to color background*/
+        background-size: 100% 100%;
+        background-position: 0px 0px,0px 0px;
+        background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%),radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, #FFF3E8 100%);
+    }
+  }
 
-.welcome-screen {
-    height: calc(100vh - 50px);
-    background-size: 100% 100%;
-    background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%), radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, #FFF3E8 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.upper-sparkle {
-    position: absolute;
-    top: 15%;
-    right: 10%;
-}
-
-.text-container {
-    padding: 10rem 5rem 20rem 5rem;
-}
-
-.red-cursor {
-    position: absolute;
-    top: 55%;
-    right: 10%;
-}
-
-.lower-sparkle {
-    position: absolute;
-    bottom: 35%;
-    left: 10%;
-}
-
-.cat-container {
-    position: absolute;
-    bottom: -2.5%;
-    left: 25%;
-    transform: translateX(-50%);
-}
-
-
-.green_block {
+  .green_block {
     width: 100%;
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #334B35;
-
-    h3 {
-        color: #FFF3E8;
-        padding-left: 10px;
-        padding-right: 10px;
-        animation: slidein-right 3s;
-        animation-iteration-count: 3s infinite;
-        width: 100%;
+    h3{
+      color: #FFF3E8;
+      padding-left: 10px;
+      padding-right: 10px;
+      animation: slidein-right 3s;	
+      animation-iteration-count:3s infinite;
+      width: 100%;
     }
-
     h4 {
-        color: #FFF3E8;
-        padding-left: 10px;
-        padding-right: 10px;
-        animation: slidein-left 3s;
-        animation-iteration-count: 1;
-        width: 100%;
+      color: #FFF3E8;
+      padding-left: 10px;
+      padding-right: 10px;
+      animation: slidein-left 3s;	
+      animation-iteration-count:1;
+      width: 100%;
     }
-}
+  }
+
 
 
 /********* Animations ************/
-/* @keyframes slidein-left {
-     from {
-       margin-left: 100%;
-       width: 300%;
-     }
-     to {
-       margin-left: 0%;
-       width: 100%;
-     }
-   }
+ /* @keyframes slidein-left {
+	  from {
+	    margin-left: 100%;
+	    width: 300%; 
+	  }
+	  to {
+	    margin-left: 0%;
+	    width: 100%;
+	  }
+	}
 
- @keyframes slidein-right {
-     from {
-       margin-left: 50%;
-       width: 300%;
-     }
-     to {
-       margin-left: 0%;
-       width: 100%;
-     }
-   }*/
+  @keyframes slidein-right {
+	  from {
+	    margin-left: 50%;
+	    width: 300%; 
+	  }
+	  to {
+	    margin-left: 0%;
+	    width: 100%;
+	  }
+	}*/
 
-.container {
+  .container {
     width: 100%;
     margin: 0;
     padding: 0;
-}
+  } 
 
-.section {
+  .section {
     width: 100%;
     margin: 0;
     padding: 0;
-}
+  }
 
 
 /********** Profil **************/
 
-.profil {
-    text-align: center;
-    padding: 20px;
+.profil{
+  text-align: center;
+  padding: 20px;
 }
 
-.profil img {
-    width: 250px;
-    height: 250px;
-    border-radius: 0;
-    object-fit: cover;
+.profil img{
+  width: 250px;
+  height: 250px;
+  border-radius: 0;
+  object-fit: cover;
 }
 
 .profil p {
-    text-align: left;
+  text-align: left;
 }
 
 .circle {
-    width: 200px; /* Set the width of the circle */
-    height: 200px; /* Set the height of the circle */
-    border-radius: 50%; /* Make it circular */
-    background-size: cover; /* Ensure the image covers the entire circle */
-    background-position: center; /* Center the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for effect */
-    transition: transform 0.2s ease-in-out;
+  width: 200px; /* Set the width of the circle */
+  height: 200px; /* Set the height of the circle */
+  border-radius: 50%; /* Make it circular */
+  background-size: cover; /* Ensure the image covers the entire circle */
+  background-position: center; /* Center the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for effect */
+  transition: transform 0.2s ease-in-out;
 }
 
 .circle:hover {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 /* Style the text below the image */
 .caption {
-    position: absolute; /* Allows precise positioning */
-    bottom: 15%; /* Position the text in the bottom half of the image */
-    left: 50%; /* Center-align the text horizontally */
-    transform: translateX(-50%); /* Adjust for horizontal centering */
-    color: rgb(255, 255, 255); /* Optional: Text color */
-    font-size: 16px; /* Adjust text size */
-    font-weight: bold; /* Optional: Bold text */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Shadow for readability */
-    pointer-events: none; /* Prevent text from interfering with the link click */
+  position: absolute; /* Allows precise positioning */
+  bottom: 15%; /* Position the text in the bottom half of the image */
+  left: 50%; /* Center-align the text horizontally */
+  transform: translateX(-50%); /* Adjust for horizontal centering */
+  color: rgb(255, 255, 255); /* Optional: Text color */
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold; /* Optional: Bold text */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Shadow for readability */
+  pointer-events: none; /* Prevent text from interfering with the link click */
 }
