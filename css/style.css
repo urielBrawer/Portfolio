@@ -221,14 +221,45 @@ input:focus {
   }
 
 /********** custom colors **************/
-  @media (max-width: 768px) {
-    .welcome-screen {
-      /*to color background*/
-        background-size: 100% 100%;
-        background-position: 0px 0px,0px 0px;
-        background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%),radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, #FFF3E8 100%);
-    }
-  }
+.welcome-screen {
+  height: calc(100vh - 50px);
+  background-size: 100% 100%;
+  background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%), radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, #FFF3E8 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upper-sparkle {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+
+.text-container {
+  padding: 10rem 5rem 20rem 5rem;
+}
+
+.red-cursor {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+}
+
+.lower-sparkle {
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+}
+
+.cat-container {
+  position: absolute;
+  bottom: -2.5%;
+  left: 25%;
+  transform: translateX(-50%);
+}
 
   .green_block {
     width: 100%;
