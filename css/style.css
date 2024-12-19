@@ -36,6 +36,7 @@ h4 {
   font-style: normal;
   font-weight: 900;
   line-height: 50px;
+  margin: 25px 0;
 }
 
 .logo {
@@ -278,10 +279,12 @@ input:focus {
 	}*/
 
   .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 10px;
   } 
+
+  * {
+    border: 2px solid #333;
+  }
 
   .section {
     width: 100%;
@@ -325,8 +328,8 @@ input:focus {
 /* Style the text below the image */
 .caption {
   position: absolute; /* Allows precise positioning */
-  bottom: 15%; /* Position the text in the bottom half of the image */
-  left: 50%; /* Center-align the text horizontally */
+  bottom: 10px; /* Position the text in the bottom half of the image */
+  /*left: 150%; /* Center-align the text horizontally */
   transform: translateX(-50%); /* Adjust for horizontal centering */
   color: rgb(255, 255, 255); /* Optional: Text color */
   font-size: 16px; /* Adjust text size */
