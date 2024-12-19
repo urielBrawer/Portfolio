@@ -424,21 +424,62 @@ input:focus {
   margin: 0 auto;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-track img {
+.carousel img {
   width: 100%;
   height: auto;
-  flex-shrink: 0;
+}
+
+.carousel-slider {
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 10px;
+}
+
+.carousel-arrow.clicked {
+  background-color: var(--mainColor);
+}
+
+.carousel-arrow i {
+  font-size: 24px;
 }
 
 /* DOTS */
 .carousel-dots {
   text-align: center;
   margin-top: 10px;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .carousel-dots span {
@@ -451,7 +492,7 @@ input:focus {
   cursor: pointer;
 }
 
-.carousel-dots .active {
+.carousel-dots .dot.active {
   background-color: var(--mainColor);
 }
 
