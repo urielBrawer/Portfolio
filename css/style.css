@@ -10,10 +10,12 @@
 
 :root {
   font-family: 'Poppins', sans-serif;
+  --mainColor: #334B35;
+  --mainColor2: #FFF3E8;
 }
 
 body {
-  background: #FFF3E8;
+  background: var(--mainColor2);
 }
 
 h1 {
@@ -23,10 +25,18 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  color: black;
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 h3 {
   color: black;
   font-family: 'Syncopate', sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 h4 {
@@ -49,7 +59,7 @@ nav .brand-logo {
 }
 
 .nav-wrapper {
-  background-color: #FFF3E8;
+  background-color: var(--mainColor2);
 }
 
 #logo-container {
@@ -90,7 +100,7 @@ p {
 }
 
 .sidenav-trigger {
-  color: #334B35;
+  color: var(--mainColor);
 }
 
 form {
@@ -146,7 +156,7 @@ label {
 
 footer.page-footer {
   margin: 0;
-  background-color: #334B35;
+  background-color: var(--mainColor);
 }
 
 /*************  Buttons, links & inputs *************/
@@ -157,7 +167,7 @@ footer.page-footer {
 .button {
   font-size: 1rem;
   color: #F05A49;
-  background-color: #FFF3E8;
+  background-color: var(--mainColor2);
   text-transform: uppercase;
   font-weight: bolder;
   padding: 5px 15px 5px 15px;
@@ -220,23 +230,54 @@ input:focus {
   }
 
 /********** custom colors **************/
-  @media (max-width: 768px) {
-    .welcome-screen {
-      /*to color background*/
-        background-size: 100% 100%;
-        background-position: 0px 0px,0px 0px;
-        background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%),radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, #FFF3E8 100%);
-    }
-  }
+.welcome-screen {
+  height: calc(100vh - 50px);
+  background-size: 100% 100%;
+  background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%), radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, var(--mainColor2) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upper-sparkle {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+
+.text-container {
+  padding: 10rem 5rem 20rem 5rem;
+}
+
+.red-cursor {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+}
+
+.lower-sparkle {
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+}
+
+.cat-container {
+  position: absolute;
+  bottom: -2.5%;
+  left: 25%;
+  transform: translateX(-50%);
+}
 
   .green_block {
     width: 100%;
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #334B35;
+    background-color: var(--mainColor);
     h3{
-      color: #FFF3E8;
+      color: var(--mainColor2);
       padding-left: 10px;
       padding-right: 10px;
       animation: slidein-right 3s;	
@@ -244,7 +285,7 @@ input:focus {
       width: 100%;
     }
     h4 {
-      color: #FFF3E8;
+      color: var(--mainColor2);
       padding-left: 10px;
       padding-right: 10px;
       animation: slidein-left 3s;	
@@ -282,9 +323,10 @@ input:focus {
     padding: 10px;
   } 
 
+  /*
   * {
     border: 2px solid #333;
-  }
+  }*/
 
   .section {
     width: 100%;
@@ -293,7 +335,7 @@ input:focus {
   }
 
 
-/********** Profil **************/
+/********** Profil-Section **************/
 
 .profil{
   text-align: center;
@@ -309,6 +351,226 @@ input:focus {
 
 .profil p {
   text-align: left;
+}
+
+
+/********** Skills-Section **************/
+
+.skills {
+  background-color: var(--mainColor);
+  color: var(--mainColor2);
+  padding: 20px;
+}
+
+.skills h2 {
+  color: var(--mainColor2);
+}
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skills h3 {
+  color: var(--mainColor2);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Abstand zwischen den Icons */
+  margin-top: 10px;
+}
+
+.icons .icon {
+  width: 40px; /* Icon-Größe anpassen */
+  height: auto;
+}
+
+/********** Project-Section **************/
+.projects {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.project {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px; /* Adjust carousel width */
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* DOTS */
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: var(--mainColor2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  background-color: var(--mainColor);
+}
+
+/********** Education-Section **************/
+
+.education {
+  background-color: var(--mainColor);
+  color: var(--mainColor2);
+  padding: 20px;
+}
+
+.education h2 {
+  color: var(--mainColor2);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.education-item span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 10px;
+  color: var(--mainColor2);
+}
+
+.education-item p {
+  font-size: 0.9rem;
+}
+
+/********** Experience-Section **************/
+.experience {
+  background-color: #F8F1E7;
+  padding: 20px;
+}
+
+.job {
+  display: flex;
+  gap: 10px;
+}
+
+.job span {
+  font-weight: bold;
+
+}
+
+.job strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.job p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/********** Language-Section **************/
+.language {
+  background-color: var(--mainColor);
+  color: var(--mainColor2);
+  padding: 20px;
+}
+
+.language h2 {
+  color: var(--mainColor2);
+}
+
+.language ul {
+  list-style: none;
+  padding: 0;
+}
+
+.language li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.language small {
+  margin-left: auto;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/********** Hobbies- Interest-Section **************/
+.hobbies {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--mainColor2);
+}
+
+.hobbies h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hobby-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobby {
+  text-align: center;
+}
+
+.hobby img {
+  width: 40px;
+  height: auto;
+}
+
+.hobby p {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .circle {
