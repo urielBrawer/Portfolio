@@ -58,8 +58,12 @@ nav .brand-logo {
   color: #444;
 }
 
-.nav-wrapper {
+.nav-bar {
   background-color: var(--mainColor2);
+}
+
+.nav-wrapper {
+  padding: 0 10px;
 }
 
 #logo-container {
@@ -101,10 +105,6 @@ p {
 
 .sidenav-trigger {
   color: var(--mainColor);
-}
-
-form {
-  padding: 2rem;
 }
 
 label {
@@ -232,9 +232,12 @@ input:focus {
 /********** custom colors **************/
 .welcome-screen {
   height: calc(100vh - 50px);
+  background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%),
+  radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, var(--mainColor2) 100%);
   background-size: 100% 100%;
-  background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%), radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, var(--mainColor2) 100%);
-  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
