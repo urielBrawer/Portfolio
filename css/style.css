@@ -23,6 +23,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 3rem;
+  margin: 1.7rem 0;
 }
 
 h2 {
@@ -348,7 +349,7 @@ input:focus {
 .profil img{
   width: 250px;
   height: 250px;
-  border-radius: 0;
+  border-radius: 10rem;
   object-fit: cover;
 }
 
@@ -367,6 +368,8 @@ input:focus {
 
 .skills h2 {
   color: var(--mainColor2);
+  text-transform: uppercase;
+  margin: 1.5rem 0;
 }
 
 
@@ -388,6 +391,7 @@ input:focus {
   justify-content: center;
   gap: 20px; /* Abstand zwischen den Icons */
   margin-top: 10px;
+  color: var(--mainColor2);
 }
 
 .icons .icon {
