@@ -155,6 +155,24 @@ label {
   font-size: inherit;
 }
 
+/*************  Footer  *************/
+.page-footer {
+  padding: 20px;
+}
+
+.page-footer h2{
+  color: var(--mainColor2);
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.page-footer p{
+  font-size: 1.2rem;
+  margin: 5px 0;
+  text-align: left;
+}
+
 footer.page-footer {
   margin: 0;
   background-color: var(--mainColor);
@@ -532,6 +550,7 @@ input:focus {
   width: 15px;
   height: auto;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .education-text {
@@ -589,6 +608,7 @@ input:focus {
   width: 15px;
   height: auto;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .experience-text {
@@ -614,33 +634,50 @@ input:focus {
 }
 
 /********** Language-Section **************/
-.language {
+.languages {
   background-color: var(--mainColor);
   color: var(--mainColor2);
   padding: 20px;
-  text-align: center;
 }
 
-.language h2 {
+.languages h2 {
   color: var(--mainColor2);
 }
 
-.language ul {
-  list-style: none;
-  padding: 0;
-}
-
-.language li {
+.language-item {
   display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 5px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-.language small {
-  margin-left: auto;
-  font-size: 12px;
-  font-style: italic;
+.language-item img {
+  width: 15px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.language-text{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50px;
+  line-height: 1.2;
+}
+
+.language{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.level {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.2;
 }
 
 /********** Hobbies- Interest-Section **************/
