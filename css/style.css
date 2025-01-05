@@ -31,7 +31,6 @@ h2 {
   font-family: 'Syncopate', sans-serif;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 10px;
   font-size: 44px;
 }
 
@@ -358,7 +357,6 @@ input:focus {
   text-align: left;
 }
 
-
 /********** Skills-Section **************/
 
 .skills {
@@ -371,7 +369,6 @@ input:focus {
 .skills h2 {
   color: var(--mainColor2);
 }
-
 
 .skills-container {
   display: flex;
@@ -518,7 +515,6 @@ input:focus {
   background-color: var(--mainColor);
   color: var(--mainColor2);
   padding: 20px;
-  text-align: center;
 }
 
 .education h2 {
@@ -527,45 +523,94 @@ input:focus {
 
 .education-item {
   display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.education-item img {
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.education-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 130px;
+  line-height: 1.2;
+}
+
+.course-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--mainColor2);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.institution-name {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--mainColor2);
+  margin: 0;
+  line-height: 1.2;
 }
 
 .education-item span {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-right: 10px;
+  margin: 0 30px;
   color: var(--mainColor2);
-}
-
-.education-item p {
-  font-size: 0.9rem;
+  line-height: 1.2;
 }
 
 /********** Experience-Section **************/
 .experience {
   padding: 20px;
-  text-align: center;
 }
 
-.job {
+.experience-item {
   display: flex;
-  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-.job span {
+.experience-item span {
+  font-size: 1.5rem;
   font-weight: bold;
-
+  margin: 0 30px;
+  line-height: 1.2;
 }
 
-.job strong {
-  display: block;
-  margin-bottom: 5px;
+.experience-item img {
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.job p {
-  font-size: 14px;
-  line-height: 1.4;
+.experience-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 130px;
+  line-height: 1.2;
+}
+
+.job-titel {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.2;
 }
 
 /********** Language-Section **************/
