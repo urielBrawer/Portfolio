@@ -355,10 +355,10 @@ input:focus {
   text-align: center;
 }
 
-  
-  * {
+  /*comment*/
+  /* * {
     border: 2px solid #333;
-  }
+  } */
 
   .section {
     width: 100%;
