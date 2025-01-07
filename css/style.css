@@ -82,6 +82,10 @@ nav .brand-logo {
   color: #F05A4A;
 }
 
+.highlights2 {
+  color: #FDAD16;
+}
+
 .upper-sparkle {
   display: flex;
   justify-content: flex-end;
@@ -287,12 +291,37 @@ input:focus {
 
 .cat-container {
   position: absolute;
-  bottom: -2.5%;
+  bottom: -.8%;
   left: 25%;
   transform: translateX(-50%);
 }
 
-  .green_block {
+.green-section {
+  width: 100%;
+  background-color: var(--mainColor);
+  background-size: 100% 100%;
+  padding: 20px;
+}
+
+.green-section h3 {
+  color: var(--mainColor2);
+  animation: slidein-right 3s;
+  animation-iteration-count: 3;
+  width: 100%;
+}
+
+.green-section h4 {
+  color: var(--mainColor2);
+  animation: slidein-left 3s;
+  animation-iteration-count:1;
+  width: 100%;
+}
+
+.end-section {
+  padding: 20px;
+}
+
+/*  .green_block {
     width: 100%;
     padding: 0;
     padding-top: 10px;
@@ -314,7 +343,7 @@ input:focus {
       animation-iteration-count:1;
       width: 100%;
     }
-  }
+  }*/
 
 
 
