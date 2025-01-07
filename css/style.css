@@ -262,7 +262,7 @@ input:focus {
   background-repeat: no-repeat;
   width: 100%;  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   position: relative;
@@ -292,7 +292,7 @@ input:focus {
 
 .cat-container {
   position: absolute;
-  bottom: -.8%;
+  /* bottom: -.8%; */
   left: 25%;
   transform: translateX(-50%);
 }
