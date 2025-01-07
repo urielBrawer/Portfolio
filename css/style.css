@@ -100,8 +100,8 @@ nav .brand-logo {
 
 .cat-container {
   display: flex;
+  justify-content: start;
   align-content: flex-end;
-  justify-content: flex-start;
 }
 
 p {
@@ -265,6 +265,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .upper-sparkle {
@@ -299,7 +300,6 @@ input:focus {
 .green-section {
   width: 100%;
   background-color: var(--mainColor);
-  background-size: 100% 100%;
   padding: 20px;
 }
 
@@ -320,32 +320,6 @@ input:focus {
 .end-section {
   padding: 20px;
 }
-
-/*  .green_block {
-    width: 100%;
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: var(--mainColor);
-    h3{
-      color: var(--mainColor2);
-      padding-left: 10px;
-      padding-right: 10px;
-      animation: slidein-right 3s;	
-      animation-iteration-count:3s infinite;
-      width: 100%;
-    }
-    h4 {
-      color: var(--mainColor2);
-      padding-left: 10px;
-      padding-right: 10px;
-      animation: slidein-left 3s;	
-      animation-iteration-count:1;
-      width: 100%;
-    }
-  }*/
-
-
 
 /********* Animations ************/
  /* @keyframes slidein-left {
