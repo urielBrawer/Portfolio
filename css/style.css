@@ -412,7 +412,6 @@ input:focus {
 }
 
 .skills-container p {
-  margin: 10px 0 ;
   font-size: 1.3rem;
   color: var(--mainColor2);
 }
