@@ -385,6 +385,15 @@ input:focus {
   text-align: left;
 }
 
+.description-text {
+  font-size: 1.5rem;
+  margin: 0 2rem;
+}
+
+.subtitle-text {
+  font-size: 2rem;
+}
+
 /********** Skills-Section **************/
 
 .skills {
@@ -460,13 +469,19 @@ input:focus {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 400px; /* Adjust carousel width */
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .carousel img {
-  width: 100%;
+  width: 80%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    max-width: 1000px;
+  }
 }
 
 .carousel-slider {
@@ -475,6 +490,10 @@ input:focus {
 
 .carousel-container {
   position: relative;
+}
+
+.carousel-item {
+  cursor: auto;
 }
 
 .carousel-arrow {
