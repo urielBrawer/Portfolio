@@ -184,18 +184,24 @@ footer.page-footer {
 
 /*************  Buttons, links & inputs *************/
 .button-container {
-  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #F05A49;
   background-color: var(--mainColor2);
   text-transform: uppercase;
   font-weight: bolder;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 0;
   border-radius: 5px;
   border: none;
+}
+
+.button:active {
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .label {
