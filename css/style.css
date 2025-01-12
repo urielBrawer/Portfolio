@@ -61,6 +61,8 @@ nav .brand-logo {
 
 .nav-bar {
   background-color: var(--mainColor2);
+  position: fixed;
+  z-index: 1000;
 }
 
 .nav-wrapper {
