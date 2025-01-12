@@ -262,7 +262,7 @@ input:focus {
 
 /********** custom colors **************/
 .welcome-screen {
-  height: calc(100vh - 50px);
+  height: calc(100vh);
   background-image: radial-gradient(59% 40% at 114% 39%, #FF5A0000 1%, #FF5A00FF 4%, #FF000000 99%),
   radial-gradient(50% 50% at 11% 84%, #F2826BFF 0%, var(--mainColor2) 100%);
   background-size: 100% 100%;
@@ -287,6 +287,8 @@ input:focus {
   /* padding-bottom: 40vh; */
   position: absolute;
   top: 30%;
+  /* max-width: 1280px;
+  width: 90%; */
 }
 
 .red-cursor {
@@ -364,14 +366,15 @@ input:focus {
 }
 
   /*comment*/
-  * {
+  /* * {
     border: 2px solid #333;
+  } */
+
+
+  .grid-container {
+    display: block; /* Default behavior for smaller screens */
+    padding-bottom: 5px;
   }
-
-
-    .grid-container {
-      display: block; /* Default behavior for smaller screens */
-    }
 
   .section {
     width: 100%;
@@ -382,7 +385,7 @@ input:focus {
     .grid-container {
       display: grid; /* Switch to grid layout */
       grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-      gap: 10px; /* Space between columns */
+      /*gap: 10px; /* Space between columns */
     }
 
     .grid-item {
@@ -395,6 +398,7 @@ input:focus {
 .profil{
   text-align: center;
   padding: 20px;
+  padding-top: 80px;
 }
 
 .profil img{
@@ -586,9 +590,34 @@ input:focus {
   padding: 20px;
 }
 
+.education-new {
+  background-color: var(--mainColor);
+  color: var(--mainColor2);
+  padding: 20px;
+}
+
+@media (min-width: 993px) {
+  .education-new {
+    background-color: var(--mainColor2);
+    color: var(--mainColor);
+    padding: 20px;
+  }
+}
+
+.education-new h2 {
+  color: var(--mainColor2);
+}
+
+@media (min-width: 993px){
+  .education-new h2 {
+    color: black;
+  }
+}
+
 .education h2 {
   color: var(--mainColor2);
 }
+
 
 .education-item {
   display: flex;
@@ -619,6 +648,11 @@ input:focus {
   margin: 0;
   line-height: 1.2;
 }
+@media (min-width: 993px) {
+  .tmp .course-name{
+    color: black;
+  }
+}
 
 .institution-name {
   font-size: 1rem;
@@ -626,6 +660,11 @@ input:focus {
   color: var(--mainColor2);
   margin: 0;
   line-height: 1.2;
+}
+@media (min-width: 993px) {
+  .tmp .institution-name{
+    color: black;
+  }
 }
 
 .education-item span {
@@ -635,10 +674,32 @@ input:focus {
   color: var(--mainColor2);
   line-height: 1.2;
 }
+@media (min-width: 993px) {
+  .tmp .education-item span {
+    color: black;
+  }
+}
 
 /********** Experience-Section **************/
 .experience {
   padding: 20px;
+}
+
+.experience-new {
+  padding: 20px;
+}
+
+@media (min-width: 993px) {
+  .experience-new {
+    background-color: var(--mainColor);
+    color: var(--mainColor2);
+    padding: 20px;
+  }
+}
+@media (min-width: 993px) {
+  .experience-new h2 {
+    color: var(--mainColor2);
+  }
 }
 
 .experience-item {
