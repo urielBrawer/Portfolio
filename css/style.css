@@ -184,18 +184,24 @@ footer.page-footer {
 
 /*************  Buttons, links & inputs *************/
 .button-container {
-  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #F05A49;
   background-color: var(--mainColor2);
   text-transform: uppercase;
   font-weight: bolder;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 0;
   border-radius: 5px;
   border: none;
+}
+
+.button:active {
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .label {
@@ -385,6 +391,15 @@ input:focus {
   text-align: left;
 }
 
+.description-text {
+  font-size: 1.5rem;
+  margin: 0 2rem;
+}
+
+.subtitle-text {
+  font-size: 2rem;
+}
+
 /********** Skills-Section **************/
 
 .skills {
@@ -460,13 +475,19 @@ input:focus {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 400px; /* Adjust carousel width */
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .carousel img {
-  width: 100%;
+  width: 80%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    max-width: 1000px;
+  }
 }
 
 .carousel-slider {
@@ -475,6 +496,10 @@ input:focus {
 
 .carousel-container {
   position: relative;
+}
+
+.carousel-item {
+  cursor: auto;
 }
 
 .carousel-arrow {
