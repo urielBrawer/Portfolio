@@ -907,3 +907,8 @@ input:focus {
   transform-origin: 20px  140px;
   
 }
+
+.contact-center{
+  margin-top: 100px;
+  text-align: center;
+}
